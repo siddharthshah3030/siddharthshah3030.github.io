@@ -1,0 +1,70 @@
+.outer {
+    padding: 2% 2% 0 2%;
+    background-color:#434649;
+}
+
+.container {
+    font-size: 14px;
+    color:white;
+    background-color: #1E2C35;
+    text-align: center;
+    margin: auto;
+	width: 25%;
+	padding: 20px ;
+	border-radius: 5px;
+    width: 300px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.form {
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+}
+
+input[placeholder]{ 
+    text-align:left; 
+    margin-left: 0px;
+}
+
+.form2 {
+    background-color:	#434649;
+    padding: 1px 0 1px 0;
+}
+
+.in{
+    background-color: #0076B4;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+input{
+	width: 60%;
+	padding: 12px 40px ;
+	border-radius: 1px;
+    text-align: left;
+
+}
+.matter {
+    font-size-adjust: 0;
+    padding: auto;
+    	line-height: 1.5;
+    	padding:0;
+
+}
+.button {
+	background: #0077B5;
+	border-color: #0077B5;
+	color: #FFFFFF;
+	width: 90%;
+	font-size: 140%;
+	border-radius: 5px;
+	padding: 8 0 0 8 ;
+	margin: 0px 0 0 0 ;
+	text-align: center ;
+}
+
+.signin {
+    color: white;
+}
+
+.button:hover {background-color: #97bbed;}
