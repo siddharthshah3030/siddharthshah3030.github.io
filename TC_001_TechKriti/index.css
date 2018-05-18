@@ -2,14 +2,15 @@ body {
   background-image: url("alpha-bg.jpg");
   background-repeat: no-repeat;
       background-size:  cover;
-  color: pink;
 
 }
 
- {
+ .headertext{
   z-index: 4;
   color: white;
-position: relative;
+  position: absolute;
+  font-size: 13px;
+
 }
 .tophead {
   width: 100%;
@@ -66,3 +67,30 @@ display: inline-block;
 z-index: 0;
 
   }
+
+  .tl3 {
+    left: 5%;
+    top: 17px;
+  }
+  .tl2 {
+    left: 15%;
+    top: 23px;
+  }
+  .tl1 {
+    top: 30px;
+    left: 25%;
+  }
+  .tr1 {
+    top: 30px;
+
+    right: 25%;
+  }  .tr2 {
+    top: 23px;
+
+      right: 15%;
+    }
+    .tr3 {
+      right: 5%;
+      top: 17px;
+
+    }
