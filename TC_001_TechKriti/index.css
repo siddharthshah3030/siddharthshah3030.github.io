@@ -4,10 +4,18 @@ body {
       background-size:  cover;
 
 }
+.bodytext {
+  position: absolute;
+  top: 20px;
+  transform: scaleX(1);
+
+}
+.block {
+  display: block;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
 }
 .row {
   width:60%;
@@ -17,25 +25,26 @@ body {
   top: 100px;
 }
 .imgbody {
-  width: 90%;
-  padding: 2px 2px 2px 2px;
+  width: 94%;
 }
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 1px;
 }
 
 .column{
-  margin-top: 2px;
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 .imgbody{
-  margin-top: 2px;
-  vertical-align: middle;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  vertical-align: bottom;
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
+.lg {
+  margin-top: 2px;
+}
 
  .headertext{
   z-index: 4;
