@@ -4,6 +4,38 @@ body {
       background-size:  cover;
 
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.row {
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 100px;
+}
+.imgbody {
+  width: 90%;
+  padding: 2px 2px 2px 2px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 1px;
+}
+
+.column{
+  margin-top: 2px;
+  vertical-align: middle;
+}
+.imgbody{
+  margin-top: 2px;
+  vertical-align: middle;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
 
  .headertext{
   z-index: 4;
@@ -12,6 +44,7 @@ body {
   font-size: 13px;
 
 }
+
 .tophead {
   width: 100%;
   position: relative;
