@@ -10,6 +10,7 @@
     z-index: 1;
     top: 3%;
     left: 3%;
+    cursor: pointer;
   }
 
   #overlay {
@@ -63,6 +64,9 @@
     -o-background-size: cover;
     background-size: cover;
     background-size: auto 100%;
+    background-size: cover;
+
+
   }
 
   .row {
@@ -201,6 +205,8 @@
     background-image: url("alpha-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+
 }
 
   .row {
@@ -367,7 +373,7 @@ a {
   color: white;
   left: 2%;
   top: 78%;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
 }
 
 .social {
@@ -376,7 +382,7 @@ a {
 
 .lg {
   top: 85%;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
 }
 
 .headertext:hover {
