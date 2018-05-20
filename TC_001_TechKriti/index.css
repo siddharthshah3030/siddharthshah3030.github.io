@@ -55,14 +55,14 @@ margin: 0;
 
   body {
     background: url("alpha-bg.jpg") no-repeat center center fixed;
+    background-size: auto 100%;
 
        -webkit-background-size: cover;
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
- height: 100%;
 
-
+background-size: auto 100%;
 
 
   }
@@ -166,7 +166,7 @@ align-self: center;
 
   .social {
     width : 5%;
-    position: absolute;
+    position: relative;
     right: 5%;
 
   }
@@ -371,7 +371,9 @@ a {
    top: 78%;
 font-size: 1.5vw;
   }
-
+.social {
+  cursor: pointer;
+}
   .lg {
     top: 85%;
 font-size: 2vw
