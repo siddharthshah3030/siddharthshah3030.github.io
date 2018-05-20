@@ -55,7 +55,9 @@
     margin: 0;
     border-top: 2px solid white;
   }
-
+html {
+  height: 100%;
+}
   body {
     background: url("alpha-bg.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -252,7 +254,7 @@
   }
 
   .tophead {
-    width: 100%;
+    width: 100vw;
     position: relative;
     display: block;
   }
