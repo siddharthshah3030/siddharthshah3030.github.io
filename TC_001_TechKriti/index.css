@@ -159,7 +159,7 @@
 
   .social {
     width: 5%;
-    position: relative;
+    position: absolute;
     right: 5%;
   }
 
@@ -201,7 +201,7 @@
     background-image: url("alpha-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
   .row {
     display: flex;
