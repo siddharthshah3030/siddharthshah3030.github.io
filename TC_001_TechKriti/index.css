@@ -390,7 +390,12 @@ a {
 .headertext:hover {
   color: cyan;
 }
-
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
 .tophead {
   cursor: pointer;
 }
