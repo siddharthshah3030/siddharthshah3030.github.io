@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="refresh" content="3" >
+<meta http-equiv="refresh" content="31" >
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
@@ -12,47 +12,66 @@
     <title></title>
   </head>
   <body>
+    <div id="overlay" onclick="document.getElementById('overlay').style.display = 'none'">
+      <div id="text">		<nav>
+        <h2>TECHKRITI'18</h2>
+    					<li> <a href="#">About</a></li><hr>
+    					<li><a href="#">Hospitality</a></li><hr>
+    					<li><a href="#">Competitions</a></li><hr>
+    					<li><a href="#">Workshops</a></li><hr>
+    					<li><a href="#">Sponsors</a></li><hr>
+              <li><a href="#">Conatct Us</a></li>
+
+    			</nav></div>
+    </div>
+
+    <div >
+      <button class="toggle" onclick="document.getElementById('overlay').style.display = 'block'"><img src="header/menu.png"></button>
+    </div>
+  </div>
+
+
     <div class="tophead">
      <span><img  src="header/l3.png" class="header l3"><div class="headertext tl3">About</div></span>
-      <img  src="header/l2.png" class="header l2"><div class="headertext tl2">Hospitality</div></span>
-      <img  src="header/l1.png" class="header l1"><div class="headertext tl1">Competitions</div></span>
-      <img  src="header/centre.png" class="header headcentre"><div class="headertext"></div></span>
+       <span>  <img  src="header/l2.png" class="header l2"><div class="headertext tl2">Hospitality</div></span>
+       <span>  <img  src="header/l1.png" class="header l1"><div class="headertext tl1">Competitions</div></span>
+       <span>  <img  src="header/centre.png" class="header headcentre"><div class="headertext"></div></span>
       <img  src="header/r1.png" class="header r1"><div class="headertext tr1">Workshops</div></span>
       <img  src="header/r2.png" class="header r2"><div class="headertext tr2">Sponsors</div></span>
       <img  src="header/r3.png" class="header r3"><div class="headertext tr3">Conatct Us</div></span>
     </div>
-
+    <img  src="socialicons/facebooksignin.png" class="fb">
+    <div class="side"><a href="">  Schedule  </a></div>
     <div class="row">
       <div class="column">
-        <div class=""><img  class="imgbody" src="tiles/competitions.jpg"><div class="bodytext lg">Competitions</div></div>
-          <div class=""><img class="imgbody"  src="tiles/merchandise.jpg"><div class="bodytext ">Merchandise</div></div>
+        <div class="block"><img  class="imgbody" src="tiles/competitions.jpg"><div class="bodytext lg">Competitions</div></div>
+          <div class="block"><img class="imgbody"  src="tiles/merchandise.jpg"><div class="bodytext bt">Merchandise</div></div>
 
 
       </div>
       <div class="column">
-        <div class="block"><img  class="imgbody" src="tiles/technocruise.jpg"><div class="bodytext ">Technocruise</div></div>
-        <div class="block"><img  class="imgbody" src="tiles/hospitality.jpg"><div class="bodytext ">Hospitality</div></div>
-        <div class=""><img  class="imgbody" src="tiles/exhibitions.jpg"><div class="bodytext ">Exhibitions</div></div>
+        <div class="block"><img  class="imgbody" src="tiles/technocruise.jpg"><div class="bodytext tp ">Technocruise</div></div>
+        <div class="block"><img  class="imgbody" src="tiles/hospitality.jpg"><div class="bodytext md ">Hospitality</div></div>
+        <div class="block"><img  class="imgbody" src="tiles/exhibitions.jpg"><div class="bodytext bt ">Exhibitions</div></div>
 
       </div>
       <div class="column">
-        <div class=""><img  class="imgbody" src="tiles/workshops.jpg"><div class="bodytext lg">Workshops</div></div>
-        <div class=""><img class="imgbody"  src="tiles/funt.jpg"><div class="bodytext ">Megaworld & Funt-T</div></div>
+        <div class="block"><img  class="imgbody" src="tiles/workshops.jpg"><div class="bodytext lg">Workshops</div></div>
+        <div class="block"><img class="imgbody"  src="tiles/funt.jpg"><div class="bodytext bt ">Megaworld & Funt-T</div></div>
 
       </div>
       <div class="column">
 
-        <div class=""><img class="imgbody"  src="tiles/shows.jpg"><div class="bodytext">Shows</div></div>
-        <div class=""><img  class="imgbody" src="tiles/talks.jpg"><div class="bodytext">Talks</div></div>
-        <div class=""><img class="imgbody"  src="tiles/tosc.jpg"><div class="bodytext">TOSC</div></div>
+        <div class="block"><img class="imgbody"  src="tiles/shows.jpg"><div class="bodytext tp">Shows</div></div>
+        <div class="block"><img  class="imgbody" src="tiles/talks.jpg"><div class="bodytext md">Talks</div></div>
+        <div class="block"><img class="imgbody"  src="tiles/tosc.jpg"><div class="bodytext bt">TOSC</div></div>
 
       </div>
     </div>
+    <img class="block social face" src="socialicons/facebook.png">
+    <img class="block social insta" src="socialicons/instagram.png">
+    <img class="social block twit "src="socialicons/twitter.png">
+    <img class=" social yout block" src="socialicons/youtube.png">
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 </html>
