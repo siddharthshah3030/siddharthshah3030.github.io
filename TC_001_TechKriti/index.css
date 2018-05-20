@@ -3,7 +3,7 @@
   .toggle {
     position: absolute;
     color: black;
-    background-color: black;
+    background-color: ;
     border: none;
     padding: 0;
     margin: 0;
@@ -64,6 +64,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     height: 100%;
+
 
   }
 
@@ -200,11 +201,10 @@
   }
 
   body {
-    background-image: url("alpha-bg.jpg");
-    background-repeat: no-repeat;
+        background-image: url("alpha-bg.jpg");
+        background-repeat: no-repeat;
+         background-attachment: fixed;
     background-size: cover;
-
-
 }
 
   .row {
