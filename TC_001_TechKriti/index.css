@@ -1,186 +1,180 @@
-@media (max-width:960px){
+@media (max-width:960px) {
 
-.toggle {
-  position: absolute;
-  color: black;
-  background-color: black;
-  border: none;
-  padding: 0;
-  margin: 0;
-  z-index: 1;
-  top: 3%;
-  left: 3%;
-}
+  .toggle {
+    position: absolute;
+    color: black;
+    background-color: black;
+    border: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    top: 3%;
+    left: 3%;
+  }
+
   #overlay {
-      position: absolute;
-      display: none;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,0.92);
-      z-index: 9999;
-      cursor: pointer;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.92);
+    z-index: 9999;
+    cursor: pointer;
   }
-h2 {
-  color: white;
-}
-  #text{
-      display: inherit;
-      align-content: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      line-height: 50px;
-      font-size: 20px;
-      color: black;
-      transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
+
+  h2 {
+    color: white;
   }
-hr {
-  position: absolute;
-  left: -300%;
 
-  display: block;
-  width: 2px;
-  color: white;
-  width: 700%;
-padding: 0;
-margin: 0;
-  border-top: 2px solid white ;
-}
+  #text {
+    display: inherit;
+    align-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    color: black;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
 
+  hr {
+    position: absolute;
+    left: -300%;
+    display: block;
+    width: 2px;
+    color: white;
+    width: 700%;
+    padding: 0;
+    margin: 0;
+    border-top: 2px solid white;
+  }
 
   body {
     background: url("alpha-bg.jpg") no-repeat center center fixed;
     background-size: auto 100%;
-
-       -webkit-background-size: cover;
- -moz-background-size: cover;
- -o-background-size: cover;
- background-size: cover;
-
-background-size: auto 100%;
-
-
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: auto 100%;
   }
-
 
   .row {
     display: flex;
     flex-wrap: wrap;
   }
+
   .row {
-    width:98%;
+    width: 98%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     top: 50px;
   }
+
   .imgbody {
     width: 94%;
   }
+
   .column {
     flex: 25%;
     max-width: 25%;
   }
 
-  .column{
+  .column {
     vertical-align: bottom;
   }
-  .imgbody{
+
+  .imgbody {
     margin-top: 6px;
     margin-bottom: 7px;
     vertical-align: bottom;
   }
-  /* Responsive layout - makes a two column-layout instead of four columns */
+
   .lg {
     margin-top: 2px;
   }
 
-   .headertext{
-display: none;
-
+  .headertext {
+    display: none;
   }
+
   .tophead {
     width: 100%;
     position: relative;
     display: block;
   }
-.header {
-  display: none;
-}
-.headcentre {
-  display: block;
-  width: 100%;
-}
 
+  .header {
+    display: none;
+  }
 
+  .headcentre {
+    display: block;
+    width: 100%;
+  }
 
   .social {
-    width : 5%;
+    width: 5%;
     position: absolute;
     top: 90%;
-
   }
 
-  .face{
+  .face {
     left: 45%;
-
   }
+
   .insta {
     left: 55%;
   }
+
   .twit {
     left: 65%;
   }
+
   .yout {
     left: 75%;
   }
-
-
-
 
   .fb {
     position: relative;
     width: 60%;
     left: 20%;
-align-content: center;
-align-items: center;
-align-self: center;
-   z-index: 99;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    z-index: 99;
     border-radius: 5px;
     cursor: pointer;
   }
-
-
-
-
-
 }
 
-
-@media (min-width:960px){
+@media (min-width:960px) {
 
   .social {
-    width : 5%;
+    width: 5%;
     position: relative;
     right: 5%;
-
   }
 
-  .face{
+  .face {
     top: 30%;
-
   }
+
   .insta {
     top: 45%;
   }
+
   .twit {
     top: 60%;
   }
+
   .yout {
     top: 75%;
   }
@@ -194,193 +188,201 @@ align-self: center;
     border-radius: 3px;
     cursor: pointer;
   }
-#overlay {
-  display: none;
-}
-.toggle {
-display: none;
-}
-body {
-  background-image: url("alpha-bg.jpg");
-  background-repeat: no-repeat;
-      background-size:  cover;
 
-}
+  #overlay {
+    display: none;
+  }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.row {
-  width:60%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 100px;
-}
-.imgbody {
-  width: 94%;
-}
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-}
+  .toggle {
+    display: none;
+  }
 
-.column{
-  vertical-align: bottom;
-}
-.imgbody{
-  margin-top: 6px;
-  margin-bottom: 7px;
-  vertical-align: bottom;
-}
-.lg {
-  margin-top: 2px;
-}
+  body {
+    background-image: url("alpha-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
- .headertext{
-  z-index: 4;
-  color: white;
-  position: absolute;
-  font-size: 13px;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  .row {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 100px;
+  }
 
-}
+  .imgbody {
+    width: 94%;
+  }
 
-.tophead {
-  width: 100%;
-  position: relative;
-  display: block;
-}
-.l3 {
+  .column {
+    flex: 25%;
+    max-width: 25%;
+  }
 
-  display: inline-block;
-  position: absolute;
-left: 0.5%;
-}
-.l2 {
-  display: inline-block;
+  .column {
+    vertical-align: bottom;
+  }
 
-  position: absolute;
-  left: 10%;
-}
+  .imgbody {
+    margin-top: 6px;
+    margin-bottom: 7px;
+    vertical-align: bottom;
+  }
 
-.l1 {
-  position: absolute;
-  display: inline-block;
+  .lg {
+    margin-top: 2px;
+  }
 
-  left: 20%;
-}
+  .headertext {
+    z-index: 4;
+    color: white;
+    position: absolute;
+    font-size: 13px;
+  }
 
-.headcentre {
-  display: inline-block;
+  .tophead {
+    width: 100%;
+    position: relative;
+    display: block;
+  }
 
-  position: absolute;
-  z-index: 3;
+  .l3 {
+    display: inline-block;
+    position: absolute;
+    left: 0.5%;
+  }
 
-  right: 26%;
-}
-.r1 {
+  .l2 {
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+  }
+
+  .l1 {
+    position: absolute;
+    display: inline-block;
+    left: 20%;
+  }
+
+  .headcentre {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    right: 26%;
+  }
+
+  .r1 {
     position: absolute;
     right: 20%;
     z-index: 2;
     display: inline-block;
+  }
 
-
-}
-.r2 {
+  .r2 {
     position: absolute;
     right: 10%;
     z-index: 1;
     display: inline-block;
+  }
 
-}.r3 {
+  .r3 {
     position: absolute;
-right : 0.5%;
-display: inline-block;
-
-z-index: 0;
-
+    right: 0.5%;
+    display: inline-block;
+    z-index: 0;
   }
 
   .tl3 {
     left: 5%;
     top: 17px;
   }
+
   .tl2 {
     left: 15%;
     top: 23px;
   }
+
   .tl1 {
     top: 30px;
     left: 25%;
   }
+
   .tr1 {
     top: 30px;
-
     right: 25%;
-  }  .tr2 {
-    top: 23px;
-
-      right: 15%;
-    }
-    .tr3 {
-      right: 5%;
-      top: 17px;
-
-    }
   }
 
+  .tr2 {
+    top: 23px;
+    right: 15%;
+  }
 
-
-
+  .tr3 {
+    right: 5%;
+    top: 17px;
+  }
+}
 
 a {
   color: white;
 }
-  .side{
-    transform: rotate(90deg);
-            position: absolute;
-            border: 3px white solid;
-            border-radius: 20%;
-            padding:5px 30px;
-            left: -56px;
-            top: 30%;
-            z-index: 1;
-            background: #212529;
-            color: white;
-            cursor: pointer;
-  }
-  .block {
-    position: relative;
-    transition: transform .2s;
-    cursor: pointer;
-  }
-  .block:hover  {
-    transform: scale(1.07);
-  }
-  .block:focus{
-    transform: scale(1.07);
-  }
-  .bodytext {
-    position: absolute;
+
+.side {
+  transform: rotate(90deg);
+  position: absolute;
+  border: 3px white solid;
+  border-radius: 20%;
+  padding: 5px 30px;
+  left: -56px;
+  top: 30%;
+  z-index: 1;
+  background: #212529;
+  color: white;
+  cursor: pointer;
+}
+
+.block {
+  position: relative;
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+.block:hover {
+  transform: scale(1.07);
+}
+
+.block:focus {
+  transform: scale(1.07);
+}
+
+.bodytext {
+  position: absolute;
   font-weight: bold;
-   color: white;
-   left:2%;
-   top: 78%;
-font-size: 1.5vw;
-  }
+  color: white;
+  left: 2%;
+  top: 78%;
+  font-size: 1.2vw;
+}
+
 .social {
   cursor: pointer;
 }
-  .lg {
-    top: 85%;
-font-size: 2vw
-  }
-  .headertext:hover {
-    color: cyan;
-  }
-  .tophead {
-    cursor: pointer
-  }
+
+.lg {
+  top: 85%;
+  font-size: 1.5vw;
+}
+
+.headertext:hover {
+  color: cyan;
+}
+
+.tophead {
+  cursor: pointer;
+}
