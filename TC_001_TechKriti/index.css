@@ -185,7 +185,7 @@ html {
     position: absolute;
     width: 12%;
     right: 5%;
-    top: 10%;
+    top: 13%;
     z-index: 99;
     border-radius: 3px;
     cursor: pointer;
@@ -254,6 +254,9 @@ html {
     position: relative;
     display: block;
   }
+  .header {
+    width: 25%;
+  }
 
   .l3 {
     display: inline-block;
@@ -277,7 +280,8 @@ html {
     display: inline-block;
     position: absolute;
     z-index: 3;
-    right: 26%;
+    right: 25%;
+    width: 50%;
   }
 
   .r1 {
