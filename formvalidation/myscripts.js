@@ -183,11 +183,11 @@ if(  age<21 )    {
 
 }
 
+var email = document.getElementById("email");
 
 email.onkeyup = function() {
   var five = this;
 
-  var email = document.getElementById("email");
   var evalue  = document.forms["form"]["email"].value;
   var emails = document.getElementById("emails");
   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -216,21 +216,24 @@ var sub = document.getElementById("submitb");
   var so = document.getElementsByClassName('no');
 if (so.length > 0) {
   document.getElementById("h4").innerHTML = "form not filled properly"
+  document.getElementById("submitb").value = "Can't Submit Now"
 
   sub.classList.remove("hi")
   sub.classList.add("disable")
 
   console.log("disable")
 }
-  else if( myInput.value && pass.value && namec.value && age.value  ) {
+  else if( myInput.value && pass.value && namec.value && age.value && phone.value && email.value) {
     console.log("hi")
     document.getElementById("h4").innerHTML = "form filled correctly and congrats"
+    document.getElementById("submitb").value = "you can submit now"
 
     sub.classList.remove("disable")
     sub.classList.add("hi")
   }
   else {
     document.getElementById("h4").innerHTML = "kindly fill all the fields"
+    document.getElementById("submitb").value = "Can't Submit Now"
 
     sub.classList.remove("hi")
     sub.classList.add("disable")
