@@ -1,4 +1,10 @@
 function name() {
+  // var x = document.forms["form"]["name"].value;
+  // console.log(x);
+  //   if (x == "") {
+  //       alert("Name must be filled out");
+  //       return false;
+  //   }
     var x = document.forms["form"]["name"].value;
     var hasNumber = /\d/;
   if(  hasNumber.test(x) )
@@ -18,10 +24,12 @@ console.log("sid here");
 
 
 function age() {
-    var a = document.forms["form"]["age"].value;
+  a = document.getElementById("age").value;
+
+  //  var a = document.forms["form"]["age"].value;
     console.log(a);
     var age = parseInt(a, 10);
-  if(  age>21 )
+  if(  age<21 )
 
       {
         alert('age must be greater then 20');
@@ -34,5 +42,7 @@ function age() {
       }
 }
 
-
-document.getElementById('age').addEventListener("onkeyup", age());
+function v(){
+let t =  age();
+   t = name();
+}
