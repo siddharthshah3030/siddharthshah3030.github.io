@@ -57,7 +57,12 @@ function pass() {
       return false;
       }
 }
+function hide() {
+    var element = document.getElementById("age");
+    element.classList.add("vis");
+}
 
+hide();
 function v(){
 // let t =  age();
 //    t = name();
