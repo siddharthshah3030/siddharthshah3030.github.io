@@ -1,10 +1,5 @@
 function name() {
-  // var x = document.forms["form"]["name"].value;
-  // console.log(x);
-  //   if (x == "") {
-  //       alert("Name must be filled out");
-  //       return false;
-  //   }
+
     var x = document.forms["form"]["name"].value;
     var hasNumber = /\d/;
   if(  hasNumber.test(x) )
@@ -42,7 +37,29 @@ function age() {
       }
 }
 
+function pass() {
+  a = document.getElementById("pass1").value;
+
+  b = document.getElementById("pass2").value
+
+  //  var a = document.forms["form"]["age"].value;
+    console.log(a);
+
+  if( a===b )
+
+      {
+        alert('password');
+      return true;
+      }
+      else
+      {
+        alert('not same password');
+      return false;
+      }
+}
+
 function v(){
-let t =  age();
-   t = name();
+// let t =  age();
+//    t = name();
+   t = pass();
 }
