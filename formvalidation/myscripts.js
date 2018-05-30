@@ -111,12 +111,17 @@ if(  hasNumber.test(x) )
 {
       names.classList.remove("yes");
       names.classList.add("no");
+      document.getElementById("names").innerHTML = "numbers ain't allowed"
+
     submit();  }
     else
 
+    {
       names.classList.remove("no");
       names.classList.add("yes");
-      {      submit();
+      document.getElementById("names").innerHTML = "name is fine"
+      submit();
+
     }
 
 }
@@ -134,12 +139,23 @@ if(  age<21 )    {
 
       ages.classList.add("no");
       submit();
+      document.getElementById("ages").innerHTML = "must be above 20"
+
+    }
+    else if (  age > 99) {
+      ages.classList.remove("yes");
+
+      ages.classList.add("no");
+      submit();
+      document.getElementById("ages").innerHTML = "above 99, sorry but you're way more older"
     }
     else
     {
 
       ages.classList.remove("no");
       ages.classList.add("yes");
+      document.getElementById("ages").innerHTML = "congrats you're old enough for this site"
+
       submit();
     }
 
@@ -158,11 +174,15 @@ email.onkeyup = function() {
   emails.classList.remove("no");
   emails.classList.add("yes");
   submit();
+  document.getElementById("emails").innerHTML = "it looks fine email"
+
 
 } else {
   emails.classList.remove("yes");
   emails.classList.add("no");
   submit();
+  document.getElementById("emails").innerHTML = "Don't give a fake mail, please"
+
 
   submit();
 
@@ -177,6 +197,7 @@ if (so.length > 0) {
 
   sub.classList.remove("hi")
   sub.classList.add("disable")
+
   console.log("disable")
 }
   else if( myInput.value && pass.value && namec.value && age.value  ) {
@@ -187,7 +208,7 @@ if (so.length > 0) {
     sub.classList.add("hi")
   }
   else {
-    document.getElementById("h4").innerHTML = "form not filled properly"
+    document.getElementById("h4").innerHTML = "kindly fill all the fields"
 
     sub.classList.remove("hi")
     sub.classList.add("disable")
