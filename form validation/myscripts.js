@@ -95,6 +95,27 @@ function hide() {
     element.classList.add("vis");
 }
 
+
+var namec = document.getElementById("name");
+var names = document.getElementById("names");
+
+namec.onkeyup = function() {
+  var x = document.forms["form"]["name"].value;
+  var hasNumber = /\d/;
+if(  hasNumber.test(x) )
+    {
+      names.classList.remove("yes");
+      names.classList.add("no");
+    return true;
+    }
+    else
+    {
+      names.classList.remove("no");
+      names.classList.add("yes");
+    return false;
+    }
+
+}
 hide();
 function v(){
 // let t =  age();

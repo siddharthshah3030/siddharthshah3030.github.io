@@ -10,13 +10,20 @@ body{
 }
 
 small {
-  color: red;
+  color: grey;
   font-size:10px;
   margin: 0;
   padding: 0;
+  visibility: hidden;
 }
-.vis {
-visibility: hidden;}
+.no {
+  visibility: visible;
+color: red;
+}
+.yes {
+  visibility: visible;
+  color: grey;
+}
  h2{
     background: #4D4D4D;
     color: grey;
