@@ -36,6 +36,39 @@ function age() {
       return false;
       }
 }
+function pa() {
+  var myInput = document.forms["form"]["password"];
+
+  //valiadte lowwer case letters
+  var lowerCaseLetters = /[a-z]/g;
+if(myInput.value.match(lowerCaseLetters)) {
+} else {
+  console.log("invalid");
+}
+
+// Validate capital letters
+var upperCaseLetters = /[A-Z]/g;
+if(myInput.value.match(upperCaseLetters)) {
+} else {
+  console.log("invalid");
+
+}
+
+// Validate numbers
+var numbers = /[0-9]/g;
+if(myInput.value.match(numbers)) {
+} else {
+  console.log("invalid");
+
+}
+
+// Validate length
+if(myInput.value.length >= 8) {
+} else {
+  console.log("invalid");
+
+}
+}
 
 function pass() {
   a = document.getElementById("pass1").value;
@@ -67,4 +100,5 @@ function v(){
 // let t =  age();
 //    t = name();
    t = pass();
+   t = pa();
 }
