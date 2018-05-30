@@ -13,13 +13,14 @@ myInput.onkeyup = function() {
   //valiadte lowwer case letters
   var lowerCaseLetters = /[a-z]/g;
 if(myInput.value.match(lowerCaseLetters)) {
-  submit();
 low.classList.remove("no");
   low.classList.add("yes");
-} else {      submit();
+  submit();
+} else {
 
   low.classList.remove("yes");
   low.classList.add("no");
+  submit();
 }
 
 // Validate capital letters
@@ -32,9 +33,9 @@ if(myInput.value.match(upperCaseLetters)) {
 
 } else {
   cap.classList.remove("yes");
-  submit();
 
   cap.classList.add("no");
+  submit();
 
 }
 
@@ -42,15 +43,15 @@ if(myInput.value.match(upperCaseLetters)) {
 var numbers = /[0-9]/g;
 if(myInput.value.match(numbers)) {
   num.classList.remove("no");
-  submit();
 
   num.classList.add("yes");
+  submit();
 
 } else {
   num.classList.remove("yes");
-  submit();
 
   num.classList.add("no");
+  submit();
 
 
 }
@@ -58,16 +59,16 @@ if(myInput.value.match(numbers)) {
 // Validate length
 if(myInput.value.length >= 8) {
   len.classList.remove("no");
-  submit();
 
   len.classList.add("yes");
+  submit();
 
 } else {
   len.classList.remove("yes");
   submit();
-  submit();
 
   len.classList.add("no");
+  submit();
 
 
 }
@@ -80,14 +81,15 @@ pass.onkeyup = function() {
   b = document.getElementById("pass2").value
   if( a===b )
       {    match.classList.remove("no");
-      submit();
   match.classList.add("yes");
+  submit();
       }
       else
 
-      {      submit();
+      {
          match.classList.remove("yes");
             match.classList.add("no");
+            submit();
       }
 }
 // function hide() {
@@ -105,16 +107,16 @@ namec.onkeyup = function() {
   var x = document.forms["form"]["name"].value;
   var hasNumber = /\d/;
 if(  hasNumber.test(x) )
-    {      submit();
 
+{
       names.classList.remove("yes");
       names.classList.add("no");
-    }
+    submit();  }
     else
-    {      submit();
 
       names.classList.remove("no");
       names.classList.add("yes");
+      {      submit();
     }
 
 }
@@ -129,16 +131,16 @@ age.onkeyup = function() {
   var age = parseInt(a, 10);
 if(  age<21 )    {
       ages.classList.remove("yes");
-      submit();
 
       ages.classList.add("no");
+      submit();
     }
     else
     {
-      submit();
 
       ages.classList.remove("no");
       ages.classList.add("yes");
+      submit();
     }
 
 }
