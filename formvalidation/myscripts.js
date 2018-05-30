@@ -1,5 +1,4 @@
 
-console.log("sid here");
 
 var myInput = document.forms["form"]["password"];
 var low = document.getElementById("low");
@@ -65,7 +64,6 @@ if(myInput.value.length >= 8) {
 
 } else {
   len.classList.remove("yes");
-  submit();
 
   len.classList.add("no");
   submit();
@@ -109,17 +107,41 @@ namec.onkeyup = function() {
 if(  hasNumber.test(x) )
 
 {
+  document.getElementById("names").innerHTML = "numbers ain't allowed"
       names.classList.remove("yes");
       names.classList.add("no");
-      document.getElementById("names").innerHTML = "numbers ain't allowed"
 
     submit();  }
     else
 
     {
+      document.getElementById("names").innerHTML = "name is fine"
       names.classList.remove("no");
       names.classList.add("yes");
-      document.getElementById("names").innerHTML = "name is fine"
+      submit();
+
+    }
+
+}
+var phonec = document.getElementById("phone");
+var phones = document.getElementById("phones");
+
+phonec.onkeyup = function() {
+  var p = document.forms["form"]["phone"].value;
+if(  p.length == 10 )
+
+{
+
+        document.getElementById("phones").innerHTML = "Don't worry we wont spam"
+        phones.classList.remove("no");
+        phones.classList.add("yes");
+    submit();  }
+    else
+
+    {  document.getElementById("phones").innerHTML = "it has to be 10 digits"
+          phones.classList.remove("yes");
+          phones.classList.add("no");
+
       submit();
 
     }
@@ -135,26 +157,26 @@ age.onkeyup = function() {
   var a = document.forms["form"]["age"].value;
   var age = parseInt(a, 10);
 if(  age<21 )    {
+  document.getElementById("ages").innerHTML = "must be above 20"
       ages.classList.remove("yes");
 
       ages.classList.add("no");
       submit();
-      document.getElementById("ages").innerHTML = "must be above 20"
 
     }
     else if (  age > 99) {
+      document.getElementById("ages").innerHTML = "above 99, sorry but you're way more older"
       ages.classList.remove("yes");
 
       ages.classList.add("no");
       submit();
-      document.getElementById("ages").innerHTML = "above 99, sorry but you're way more older"
     }
     else
     {
 
+      document.getElementById("ages").innerHTML = "congrats you're old enough for this site"
       ages.classList.remove("no");
       ages.classList.add("yes");
-      document.getElementById("ages").innerHTML = "congrats you're old enough for this site"
 
       submit();
     }
@@ -171,17 +193,17 @@ email.onkeyup = function() {
   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
   if(filter.test(evalue)){
+    document.getElementById("emails").innerHTML = "it looks fine email"
   emails.classList.remove("no");
   emails.classList.add("yes");
   submit();
-  document.getElementById("emails").innerHTML = "it looks fine email"
 
 
 } else {
+  document.getElementById("emails").innerHTML = "Don't give a fake mail, please"
   emails.classList.remove("yes");
   emails.classList.add("no");
   submit();
-  document.getElementById("emails").innerHTML = "Don't give a fake mail, please"
 
 
   submit();
