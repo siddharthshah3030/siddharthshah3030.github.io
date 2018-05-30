@@ -12,17 +12,21 @@
   <h2>Signup for a free account</h2>
   <form name="form" onsubmit="return v()">
     <input id="name" type="text" name="name" placeholder="Name" >
-    <small id="names" class="vis">numbers not allowed</small>
-    <input type="email" name="email" placeholder="Email" />
-    <small class="vis" >not proper email</small>
-    <input type="number" name="phone" placeholder="phone number" />
-    <small class="vis" >only positive numbers allowed</small>
-    <input id="" type="number" name="age" placeholder="age"  />
-    <small class="" id="age" >must be greater then 20</small>
+    <small id="names" class="">numbers not allowed</small>
+    <input id="email" type="email" name="email" placeholder="Email" />
+    <small id="emails" class="" >not proper email</small>
+    <input id="phone" type="number" name="phone" placeholder="phone number" />
+    <small id="phones" class="" >only positive numbers allowed</small>
+    <input id="age" type="number" name="age" placeholder="age"  />
+    <small id="ages" class=""  >must be greater then 20</small>
     <input id="pass1" type="password" name="password" placeholder="password" />
-    <small class="vis" >make it stronger</small>
+    <small id="low"  >atleast 1 lowwer</small>
+    <small id="cap" >atleast 1 upper</small>
+    <small id="num"class="vis" >atleast 1 nomber</small>
+    <small id="len"class="vis" >min 8 characters</small>
+
     <input id="pass2" type="password" name="pass" placeholder="conform password" />
-    <small class="vis" >passwords dont match</small>
+    <small id="match" class="vis" >passwords dont match</small>
     <input type="submit" value="Submit" />
   </form>
 </div>
