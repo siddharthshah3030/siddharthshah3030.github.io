@@ -20,9 +20,6 @@ console.log("sid here");
 
 function age() {
   a = document.getElementById("age").value;
-
-  //  var a = document.forms["form"]["age"].value;
-    console.log(a);
     var age = parseInt(a, 10);
   if(  age<21 )
 
@@ -72,12 +69,7 @@ if(myInput.value.length >= 8) {
 
 function pass() {
   a = document.getElementById("pass1").value;
-
   b = document.getElementById("pass2").value
-
-  //  var a = document.forms["form"]["age"].value;
-    console.log(a);
-
   if( a===b )
 
       {
