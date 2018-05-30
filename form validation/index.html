@@ -9,12 +9,12 @@
   </head>
   <body>
     <div class="">
-  <h2>Form Validation By Js  - SiD</h2>
-  <form name="form" onsubmit="return v()">
+  <h2>Form Validation using Js  - SiD</h2>
+  <form name="form" >
     <input id="name" type="text" name="name" placeholder="Name" required>
     <small id="names" class="">numbers not allowed</small>
     <input id="email" type="email" name="email" placeholder="Email" required>
-    <small id="emails" class="" >not proper email</small>
+    <small id="emails" class="" > proper email is required </small>
     <input id="phone" type="number" name="phone" placeholder="phone number" required>
     <small id="phones" class="" >only positive numbers allowed</small>
     <input id="age" type="number" name="age" placeholder="age"  required>
@@ -24,10 +24,11 @@
     <small id="cap" >atleast 1 upper</small>
     <small id="num"class="vis" >atleast 1 nomber</small>
     <small id="len"class="vis" >min 8 characters</small>
-    <input id="pass2" type="password" name="pass" placeholder="conform password" required>
+    <input id="pass2" type="password" name="pass" placeholder="confirm password" required>
     <small id="match" class="vis" >passwords dont match</small>
-    <input type="submit" value="Submit" />
+    <input class="disable" id="submitb" type="submit" value="Submit" attribute=disabled>
   </form>
+  <h4 id="h4"></h4>
 </div>
   </body>
 <script src="myscripts.js"></script>

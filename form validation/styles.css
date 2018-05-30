@@ -1,12 +1,11 @@
 body{
     font-family: 'Open Sans Condensed', sans;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     padding: 30px;
     background: #FFFFFF;
     margin: 10px auto;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
-
-
 }
 
 small {
@@ -26,7 +25,7 @@ color: red;
 }
  h2{
     background: #4D4D4D;
-    color: grey;
+    color: white;
     font-size: 20px;
     font-weight: 100;
     padding: 20px;
@@ -50,15 +49,29 @@ input {
  input[type="submit"]{
 
     box-shadow: inset 0px 1px 0px 0px blue;
-    background-color: #2CBBBB;
     border: 1px solid #27A0A0;
     display: inline-block;
     cursor: pointer;
-    color: #FFFFFF;
     font-size: 18px;
     padding: 8px 18px;
     text-decoration: none;
 }
- input[type="submit"]:hover {
+.hi:hover {
     background-color:#34CACA;
+}
+.disable {
+  cursor : not-allowed;
+  color: white;
+  background-color: red;
+}
+.hi{
+  background-color: #2CBBBB;
+
+  color: #FFFFFF;
+
+}
+h4 {
+  padding: 0;
+  margin: 0;
+  
 }
