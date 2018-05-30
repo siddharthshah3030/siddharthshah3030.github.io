@@ -12,11 +12,17 @@
   <h2>Signup for a free account</h2>
   <form name="form" onsubmit="return v()">
     <input type="text" name="name" placeholder="Name" >
+    <small class="vis">numbers not allowed</small>
     <input type="email" name="email" placeholder="Email" />
+    <small class="vis" >not proper email</small>
     <input type="number" name="phone" placeholder="phone number" />
+    <small class="vis" >only positive numbers allowed</small>
     <input id="age" type="number" name="age" placeholder="age"  />
+    <small class="vis" >must be greater then 20</small>
     <input id="pass1" type="password" name="password" placeholder="password" />
+    <small class="vis" >make it stronger</small>
     <input id="pass2" type="password" name="password" placeholder="conform password" />
+    <small class="vis" >passwords dont match</small>
 
     <input type="submit" value="Submit" />
   </form>
