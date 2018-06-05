@@ -1,5 +1,7 @@
+# seems crazy and awesome team view section for Aavartan
+# sorry for terrible editing and selection :p
+#SiD
 # Grid Layout with Motion Hover Effect and Content Preview
-
 A retro-style grid layout with a playful motion hover effect on the grid items. When clicking on a grid item, a content preview opens. We use [TweenMax](https://greensock.com/tweenmax) for the animations.
 
 ![Grid Layout Motion](https://tympanus.net/codrops/wp-content/uploads/2018/05/GridLayoutMotion_featured.jpg)
