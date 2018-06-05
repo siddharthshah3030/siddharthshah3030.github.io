@@ -5,9 +5,12 @@
 
 ## comments
 
-  - sample 4,6,7 are pretty good
+
   - sample one seems amazing
+  - sample 4,6,7 are pretty good
   - profile icons and links can be added later on 
+  - effects and transitions can be modified
+  - more effects can be added as desired
 
 
 ### feel free to give Suggesstions!!
