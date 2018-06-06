@@ -21,7 +21,7 @@
 
   window.addEventListener('wheel', function(){
     drawMbp()
-    drawMbp()    drawMbp()
+    drawMbp()  
 
     drawMbp()
   }
