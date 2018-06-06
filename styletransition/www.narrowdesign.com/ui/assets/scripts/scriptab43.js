@@ -84,6 +84,7 @@ $(function() {
       rotation += moved/-10; // scroll amount
       cancelAnimationFrame(animRAF);
       animateScroll((currentSection + 1) * -90,rotation)
+      console.log("scrolled");
       rotation = trimRotation();
       if (!BODY.hasClass('is-gallery')) {
         e.preventDefault();
@@ -116,6 +117,8 @@ $(function() {
         startScrollTimeout();
         cancelAnimationFrame(animRAF);
         scrollHandler()
+        cancelAnimationFrame(animRAF);
+        animateScroll((currentSection + 1) * -90,rotation)
       }
     }
   });
