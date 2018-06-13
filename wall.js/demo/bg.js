@@ -78,7 +78,7 @@
         window.addEventListener('touchmove', mouseMove);
 
     }
-
+mouseMove()
     function mouseMove(e) {
       var mysize  = window.innerWidth
  //         || document.documentElement.clientWidth
