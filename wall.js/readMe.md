@@ -1,5 +1,4 @@
 # onePageSite
- <br />
 ## sample template for AAvartan
 
 ## inspired by

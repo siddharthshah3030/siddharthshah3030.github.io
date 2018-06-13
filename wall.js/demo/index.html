@@ -26,18 +26,24 @@
 </head>
 
 <body>
+<div id="croxx" class="dog" onclick="mymenu()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
   <div id="large-header" class="large-header">
   <canvas id="demo-canvas"></canvas>
     <h1 class="main-title">I<span class="thin">magine</span> I<span class="thin">mprove</span> I<span class="thin">mplement</span></h1>
 </div>
-  <ul class="nav" data-wall-section-nav>
-    <li class="nav-link">home</li>
-    <li class="nav-link">evolution</li>
-    <li class="nav-link">gallery</li>
-    <li class="nav-link">team technpcracy</li>
-    <li class="nav-link">campus ambassador</li>
-    <li class="nav-link">web developers</li>
-    <li class="nav-link">contact us</li>
+<div>
+  <ul id="navy" class="nav" data-wall-section-nav>
+    <li onclick="menu()" class="nav-link">home</li>
+    <li onclick="menu()"class="nav-link">evolution</li>
+    <li onclick="menu()" class="nav-link">gallery</li>
+    <li onclick="menu()" class="nav-link">team technpcracy</li>
+    <li onclick="menu()" class="nav-link">campus ambassador</li>
+    <li onclick="menu()" class="nav-link">web developers</li>
+    <li onclick="menu()" class="nav-link">contact us</li>
   </ul>
   <div id="wall" class="wall main">
     <section class="section section-1">
@@ -136,6 +142,8 @@
   <script src="../dist/wall.js"></script>
   <script src="./index.js"></script>
   <script src="./bg.js"></script>
+  <script src="./navbar.js"></script>
+
 
 
 </body>
