@@ -291,19 +291,22 @@ animation-delay: 0s;
 .dot {
   position: absolute;
   top: 50%;
-  right: 50px;
+  right: 1%;
   transform: translateY(-50%);
   text-align: center;
   padding: 0;
   margin: auto;
+margin-right: 0.5%;
 }
 
 .dot>li {
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  opacity: 0.8;
+  height: 1em;
   margin-bottom: 10px;
   border: 2px solid #fff;
   border-radius: 50%;
+  margin-top: 15px;
   background-color: transparent;
   box-sizing: border-box;
   list-style: none;
@@ -388,7 +391,7 @@ animation-delay: 0s;
   .dot {
     position: absolute;
     top: 50%;
-    right: 2%;
+    right: 1%;
 
   }
   .section h1 {
@@ -400,23 +403,24 @@ animation-delay: 0s;
     font-weight: 500;
     opacity: 0;
     transform: translateY(20px);
-    transition: all .5s ease-in-out 0.5s;
+    /* transition: all .5s ease-in-out 0.5s; */
   }
   .current h1 {
     opacity: 1;
+    font-size: 2em;
     transform: translateY(0);
-    -webkit-animation: blurFadeIn 1s ease-in 0.7s backwards;
+    -webkit-animation: blurFadeIn 0.5s ease-in 0.2s backwards;
 
   }
   .section:first-of-type h1 {
     margin-top: 20%;
-    font-size: 3.75em;
+    font-size: 3.0em;
   }
 
   .nav {
     display: none;
     flex-direction: column;
-font-size: 1.6em;
+font-size: 1.4em;
 align-content: flex-start;
 font-weight: bolder;
 transition-duration: 1s;
@@ -425,7 +429,7 @@ background-size: cover;
 height: 100%;
   }
   .nav-link {
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 
 align-self: flex-start;
 margin-bottom: 15px;
@@ -434,17 +438,18 @@ margin-bottom: 15px;
   .dog,.change {
     display: block;
     position: absolute;
-      top: 1%;
-      right: 1%;
+      top: 2%;
+      right: 4%;
       background: none;
-      width: 60px;
+      width: 9%;
       z-index: 99;
+      margin-right: 0;
 
 
   }
 
   .bar1, .bar2, .bar3 {
-      width: 35px;
+      width: 100%;;
       height: 5px;
       background-color: white;
       margin: 6px 0;
@@ -467,6 +472,17 @@ margin-bottom: 15px;
   .change .bar3 {
       -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
       transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  .current p {
+font-size: 0.8em;
+
+  }
+
+  .current h5 {
+    font-size: 0.8em;
+
+
+    /* transition-duration: 2s; */
   }
 
 }

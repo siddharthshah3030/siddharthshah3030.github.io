@@ -35,4 +35,20 @@ function menu() {
     x.className = "dog";
 }}
 }
+// 
+// function menu() {
+//   if(mysize<650){
+//   if(  navbar.style.display == "flex"){
+//     navbar.style.display = "none";
+//
+//   } else {
+//     navbar.style.display = "flex";
+//
+//   }
+//   if (x.className === "dog") {
+//     x.className = "change";
+// } else {
+//     x.className = "dog";
+// }}
+// }
 // document.getElementByClass("nav-link").addEventListener("click", menu());
