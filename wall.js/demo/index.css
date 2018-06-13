@@ -418,13 +418,15 @@ animation-delay: 0s;
   }
 
   .nav {
-    display: flex;
+    display: none;
     flex-direction: column;
 font-size: 1.6em;
 align-content: flex-start;
 font-weight: bolder;
 transition-duration: 1s;
-background-color: rgba(0,0,0,0.5)
+background-color: rgba(0,0,0,0.5);
+background-size: cover;
+height: 100%;
   }
   .nav-link {
     transition-duration: 1s;
@@ -433,7 +435,7 @@ align-self: flex-start;
 margin-bottom: 15px;
 
   }
-  .dog {
+  .dog,.change {
     display: block;
     position: absolute;
       top: 1%;
@@ -470,7 +472,5 @@ margin-bottom: 15px;
       -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
       transform: rotate(45deg) translate(-8px, -8px) ;
   }
-.notnow {
-  display: none;
-}
+
 }
