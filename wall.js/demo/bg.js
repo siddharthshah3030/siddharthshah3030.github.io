@@ -75,20 +75,10 @@
         }
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
-        window.addEventListener('touchmove', mouseMove);
-
     }
-mouseMove()
-    function mouseMove(e) {
-      var mysize  = window.innerWidth
- //         || document.documentElement.clientWidth
- //         || document.body.clientWidth;
-        var posx  = mysize/2;
-        var height = window.innerHeight
-|| document.documentElement.clientHeight
-|| document.body.clientHeight;
-var posy = height/2;
 
+    function mouseMove(e) {
+        var posx = posy = 0;
         if (e.pageX || e.pageY) {
             posx = e.pageX;
             posy = e.pageY;
@@ -97,15 +87,6 @@ var posy = height/2;
             posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
             posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
         }
-//         console.log(posx);
-//         console.log(posy);
-//         var mysize  = window.innerWidth
-//         || document.documentElement.clientWidth
-//         || document.body.clientWidth;
-//         if(mysize<650){
-//           target.x = 50%;
-//           target.y = 50%;
-// }
         target.x = posx;
         target.y = posy;
     }
