@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>wall.js</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css' -->
+  <!-- /> -->
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/darcula.min.css' />
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+  <!--<script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+
+    ga('create', 'UA-101176938-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>-->
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <ul class="nav" data-wall-section-nav>
+    <li class="nav-link">First-Intro</li>
+    <li class="nav-link">Second-Navs</li>
+    <li class="nav-link">Third-Slides</li>
+    <li class="nav-link">Forth-Duration</li>
+    <li class="nav-link">Fifth-Class</li>
+    <li class="nav-link">Sixth-API</li>
+    <li class="nav-link">Seventh-Configs</li>
+  </ul>
+  <div id="wall" class="wall main">
+    <section class="section section-1">
+      <div class="wrapper">
+        <h1>AAvartan</h1>
+        <div class="sub-header">
+          <h5>one page scrolling effect</h5>
+        </div>
+        <h5 class="step">>> Get Started</h5>
+
+      </div>
+    </section>
+    <section class="section section-2">
+      <div class="wrapper">
+        <h1>Config Navs</h1>
+        <div class="sub-header">
+          <h5>Do you see the nav at top and dots at right?</h5>
+        </div>
+        <h5 class="step">>> add <span class="hl">data-wall-section-nav</span> attribute to your own nav element</h5>
+        <p>Note: wall.js will not create them directly, what wall.js does is to toggle the active class</p>
+
+        <h5 class="step">>> Style the nav element by yourself</h5>
+        <p>here is an example of dot nav</p>
+
+        <h5 class="step">>> Custom Config </h5>
+        <p>wall.js will add 'active' class to the nav item when you move into new section.</p>
+        <p>You can set your own active class with config object when you init Wall.</p>
+
+      </div>
+    </section>
+    <section class="section section-3">
+      <div class="slide" style="background-color: #0277bd" data-wall-slide>
+        <div class="wrapper">
+          <h1>Slides-1: Init Slide</h1>
+          <h5 class="step">>> add <span class="hl">data-wall-slide</span> attribute to your HTMLElement</h5>
+
+          <p>try to click arrow to toggle slide</p>
+        </div>
+      </div>
+      <div class="slide" style="background-color: #ffa000" data-wall-slide>
+        <div class="wrapper">
+          <h1>Slides-2: Arrows</h1>
+          <h5 class="step">>> add <span class="hl">data-wall-slide-arrow</span> attribute to your arrows</h5>
+
+          <p>Your should create and style the arrow yourself, wall.js helps arraw show above the slides</p>
+        </div>
+      </div>
+      <div data-wall-slide-arrow class="prev-slide"></div>
+      <div data-wall-slide-arrow class="next-slide"></div>
+    </section>
+    <section class="section section-4" data-wall-animate-duration=3>
+      <div class="wrapper">
+        <h1>Animation Duration</h1>
+        <h5 class="step">>> change all sections' animation duration:</h5>
+
+        <h5 class="step">>>add <span class="hl">data-wall-animate-duration</span> attribute to one or many of sections</h5>
+        <p>This Section will take 3 seconds of animation.</p>
+
+        <h5 class="step">>> of cause it works for slides</h5>
+
+      </div>
+    </section>
+    <section class="section section-5">
+      <div class="wrapper">
+        <h1>Class of Current</h1>
+        <h5 class="step">>> current section will be added <span class="hl">current</span> class</h5>
+        <p>Open your develop tool to check it!</p>
+
+        <h5 class="step">>> animating section will be added <span class="hl">animating</span> class</h5>
+        <p>Open your develop tool to check it!</p>
+
+        <h5 class="step">>> You can control animation like this:</h5>
+
+        <p>Bring it into full play!</p>
+      </div>
+    </section>
+    <section class="section section-6">
+      <div class="wrapper">
+        <h1>API</h1>
+
+      </div>
+    </section>
+    <section class="section section-7">
+      <div class="wrapper">
+        <h1>All Default Configs</h1>
+
+      </div>
+    </section>
+  </div>
+  <div id="prev" class="btn btn-secondary"><</div>
+  <div id="next" class="btn btn-primary">></div>
+  <ul class="dot" data-wall-section-nav>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <script src="../dist/wall.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
