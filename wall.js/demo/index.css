@@ -83,7 +83,8 @@ span.hl {
   width: 100%;
 }
 .nav-link.active{
-  font-size: 1.3sem;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 .section {
@@ -143,14 +144,47 @@ opacity: 0;
 }
 .current p {
 opacity: 1;
-transition-duration: 1s;
+/* transition-duration: 2s; */
+animation-name: spaceInRight;
+animation-duration: 1s;
+animation-delay: 0s;
+
 }
 
 .current h5 {
   opacity: 1;
-  tra
-  transition-duration: 1s;
+  animation-name: spaceInRight;
+  animation-duration: 1s;
+  animation-delay: 0s;
+
+  /* transition-duration: 2s; */
 }
+
+
+.spaceInRight {
+  -webkit-animation-name: spaceInRight;
+          animation-name: spaceInRight;
+          animation-duration: 2s;
+          animation-delay: 5s;
+}
+@-webkit-keyframes spaceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-transform: scale(.2) translate(0%, 200%);
+            transform: scale(.2) translate(0%, 200%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-transform: scale(1) translate(0%, 0%);
+            transform: scale(1) translate(0%, 0%);
+  }
+}
+
 
 .section-1 {
   /* background-color: #ff6434; */
@@ -370,10 +404,20 @@ transition-duration: 1s;
     margin-top: 0;
     text-shadow: 2px 2px 5px #333;
     text-align: center;
-    font-size: 40px;
+    font-size: 3em;
     font-weight: 500;
     opacity: 0;
     transform: translateY(20px);
     transition: all .5s ease-in-out 0.5s;
+  }
+  .current h1 {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-animation: blurFadeIn 1s ease-in 0.7s backwards;
+
+  }
+  .section:first-of-type h1 {
+    margin-top: 20%;
+    font-size: 100px;
   }
 }

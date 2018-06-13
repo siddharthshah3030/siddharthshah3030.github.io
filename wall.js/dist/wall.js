@@ -213,7 +213,7 @@ var defaultOptions = {
   sectionAnimateDuration: 1,
   easeFunction: 'easeInOut',
   loopToBottom: false,
-  loopToTop: false,
+  loopToTop: true,
   sectionNavItemActiveClass: 'active',
   animatingClass: 'animating',
   currentClass: 'current'
