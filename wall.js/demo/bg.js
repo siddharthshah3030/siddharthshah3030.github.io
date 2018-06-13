@@ -70,15 +70,30 @@
 
     // Event handling
     function addListeners() {
+
+      var mysize  = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+console.log(mysize);
+        if(mysize>650){
         if(!('ontouchstart' in window)) {
             window.addEventListener('mousemove', mouseMove);
         }
+      }
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     }
 
     function mouseMove(e) {
-        var posx = posy = 0;
+      var width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var height = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+        var posx = width/2;
+        var posy = height/2;
         if (e.pageX || e.pageY) {
             posx = e.pageX;
             posy = e.pageY;
