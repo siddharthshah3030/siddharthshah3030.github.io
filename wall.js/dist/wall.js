@@ -210,7 +210,7 @@ var IMAGE_ORIGIN = DATA_PRE + '-origin';
 
 var defaultOptions = {
   wrapperZIndex: 1,
-  sectionAnimateDuration: 1,
+  sectionAnimateDuration: 0.5,
   easeFunction: 'easeInOut',
   loopToBottom: false,
   loopToTop: true,

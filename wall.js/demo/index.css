@@ -108,7 +108,7 @@ opacity: 0;
   font-weight: 700;
   opacity: 0;
   transform: translateY(20px);
-  transition: all .5s ease-in-out 0.5s;
+  /* transition: all .5s ease-in-out 0.001s; */
 }
 
 .section:first-of-type h1 {
@@ -118,7 +118,7 @@ opacity: 0;
 .current h1 {
   opacity: 1;
   transform: translateY(0);
-  -webkit-animation: blurFadeIn 1s ease-in 0.7s backwards;
+  -webkit-animation: blurFadeIn 0.5s ease-in 0.2s backwards;
 
 }
 @keyframes blurFadeIn{
@@ -142,7 +142,7 @@ opacity: 0;
 opacity: 1;
 /* transition-duration: 2s; */
 animation-name: spaceInRight;
-animation-duration: 1s;
+animation-duration: 0.5s;
 animation-delay: 0s;
 
 }
@@ -150,19 +150,15 @@ animation-delay: 0s;
 .current h5 {
   opacity: 1;
   animation-name: spaceInRight;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-delay: 0s;
 
   /* transition-duration: 2s; */
 }
 
 
-.spaceInRight {
-  -webkit-animation-name: spaceInRight;
-          animation-name: spaceInRight;
-          animation-duration: 2s;
-          animation-delay: 5s;
-}
+
+
 @-webkit-keyframes spaceInRight {
   0% {
     opacity: 0;
@@ -265,7 +261,7 @@ animation-delay: 0s;
   font-size: 20px;
   font-size: 3em;
   left: 100px;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 
   bottom: 50px;
   z-index: 3;
@@ -279,7 +275,7 @@ animation-delay: 0s;
   font-size: 3em;
   font-weight: bolder;
   color: white;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   right: 100px;
   bottom: 50px;
   z-index: 3;
@@ -312,7 +308,7 @@ animation-delay: 0s;
   box-sizing: border-box;
   list-style: none;
   cursor: pointer;
-  transition-duration: 0.7s;
+  transition-duration: 0.3s;
 }
 
 .dot>li.active,

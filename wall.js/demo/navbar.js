@@ -20,8 +20,6 @@ var mysize  = window.innerWidth
 || document.documentElement.clientWidth
 || document.body.clientWidth;
 
-
-
 function menu() {
   if(mysize<650){
   if(  navbar.style.display == "flex"){
