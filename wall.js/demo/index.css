@@ -84,6 +84,12 @@ span.hl {
 .section {
   padding: 70px 20px 30px 20px;
 }
+.section p{
+  visibility: hidden;
+}
+.section h5{
+  visibility: hidden;
+}
 
 @media (max-width: 650px) {
   .section {
@@ -111,34 +117,72 @@ span.hl {
   transform: translateY(0);
 }
 
+.current p {
+visibility: visible;
+}
+
+.current h5 {
+visibility: visible;
+}
+
 .section-1 {
-  background-color: #ff6434;
-  background: linear-gradient( #ff6434 15%, #ffab00 0, #ffab00 30%, #ffff56 0, #ffff56 45%, #64dd17 0, #64dd17 60%, #00b8d4 0, #00b8d4 75%, #2962ff 0, #2962ff 90%, #6200ea 0, #6200ea 100%);
+  /* background-color: #ff6434; */
+    /* background-color: rgba(101, 31, 255, 0.01); */
+    background: none;
+    z-index: 0;
+  /* background: linear-gradient( #ff6434 15%, #ffab00 0, #ffab00 30%, #ffff56 0, #ffff56 45%, #64dd17 0, #64dd17 60%, #00b8d4 0, #00b8d4 75%, #2962ff 0, #2962ff 90%, #6200ea 0, #6200ea 100%); */
 }
 
 .section-2 {
-  background-color: #f57f17;
-  background-color: none;
+  /* background-color: #f57f17; */
+    /* background-color: rgba(101, 31, 255, 0.01); */
+    background-color: none;
+    z-index: 0;
+
 }
 
 .section-3 {
-  background-color: #651fff;
+  /* background-color: #651fff; */
+  /* background-color: rgba(101, 31, 255, 0.1); */
+  background-color: none;
+  z-index: 0;
+
+
 }
 
 .section-4 {
-  background-color: #ff7043
+  /* background-color: #ff7043; */
+    /* background-color: rgba(101, 31, 255, 0.01); */
+    background-color: none;
+    z-index: 0;
+
+
 }
 
 .section-5 {
-  background-color: #4caf50;
+  /* background-color: #4caf50; */
+    /* background-color: rgba(101, 31, 255, 0.01); */
+    background-color: none;
+    z-index: 0;
+
+
 }
 
 .section-6 {
-  background-color: #0081cb;
+  /* background-color: #0081cb; */
+    /* background-color: rgba(101, 31, 255, 0.01); */
+    background-color: none;
+    z-index: 0;
+
+
 }
 
 .section-7 {
-  background-color: #6d4c41;
+  /* background-color: #6d4c41; */
+    /* background-color: rgba(101, 31, 255, 0.01); */
+    background-color: none;
+
+
 }
 
 .slide {

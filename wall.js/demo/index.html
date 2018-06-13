@@ -21,17 +21,23 @@
   </script>
   <script async src='https://www.google-analytics.com/analytics.js'></script>-->
   <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./bg.css">
+
 </head>
 
 <body>
+  <div id="large-header" class="large-header">
+  <canvas id="demo-canvas"></canvas>
+    <h1 class="main-title">Imagine <span class="thin">Improve Implement</span></h1>
+</div>
   <ul class="nav" data-wall-section-nav>
-    <li class="nav-link">First-Intro</li>
-    <li class="nav-link">Second-Navs</li>
-    <li class="nav-link">Third-Slides</li>
-    <li class="nav-link">Forth-Duration</li>
-    <li class="nav-link">Fifth-Class</li>
-    <li class="nav-link">Sixth-API</li>
-    <li class="nav-link">Seventh-Configs</li>
+    <li class="nav-link">home</li>
+    <li class="nav-link">evolution</li>
+    <li class="nav-link">gallery</li>
+    <li class="nav-link">team technpcracy</li>
+    <li class="nav-link">campus ambassador</li>
+    <li class="nav-link">web developers</li>
+    <li class="nav-link">contact us</li>
   </ul>
   <div id="wall" class="wall main">
     <section class="section section-1">
@@ -46,7 +52,7 @@
     </section>
     <section class="section section-2">
       <div class="wrapper">
-        <h1>Config Navs</h1>
+        <h1>evolution</h1>
         <div class="sub-header">
           <h5>Do you see the nav at top and dots at right?</h5>
         </div>
@@ -63,17 +69,17 @@
       </div>
     </section>
     <section class="section section-3">
-      <div class="slide" style="background-color: #0277bd" data-wall-slide>
+      <div class="slide"  data-wall-slide>
         <div class="wrapper">
-          <h1>Slides-1: Init Slide</h1>
+          <h1>gallery </h1>
           <h5 class="step">>> add <span class="hl">data-wall-slide</span> attribute to your HTMLElement</h5>
 
           <p>try to click arrow to toggle slide</p>
         </div>
       </div>
-      <div class="slide" style="background-color: #ffa000" data-wall-slide>
+      <div class="slide"  data-wall-slide>
         <div class="wrapper">
-          <h1>Slides-2: Arrows</h1>
+          <h1>more images</h1>
           <h5 class="step">>> add <span class="hl">data-wall-slide-arrow</span> attribute to your arrows</h5>
 
           <p>Your should create and style the arrow yourself, wall.js helps arraw show above the slides</p>
@@ -84,7 +90,7 @@
     </section>
     <section class="section section-4" data-wall-animate-duration=3>
       <div class="wrapper">
-        <h1>Animation Duration</h1>
+        <h1>team technocracy</h1>
         <h5 class="step">>> change all sections' animation duration:</h5>
 
         <h5 class="step">>>add <span class="hl">data-wall-animate-duration</span> attribute to one or many of sections</h5>
@@ -96,7 +102,7 @@
     </section>
     <section class="section section-5">
       <div class="wrapper">
-        <h1>Class of Current</h1>
+        <h1>campus ambassdor</h1>
         <h5 class="step">>> current section will be added <span class="hl">current</span> class</h5>
         <p>Open your develop tool to check it!</p>
 
@@ -110,13 +116,13 @@
     </section>
     <section class="section section-6">
       <div class="wrapper">
-        <h1>API</h1>
+        <h1>web developers</h1>
 
       </div>
     </section>
     <section class="section section-7">
       <div class="wrapper">
-        <h1>All Default Configs</h1>
+        <h1>contcat us</h1>
 
       </div>
     </section>
@@ -135,8 +141,12 @@
   <script>
     hljs.initHighlightingOnLoad();
   </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
   <script src="../dist/wall.js"></script>
   <script src="./index.js"></script>
+  <script src="./bg.js"></script>
+
+
 </body>
 
 </html>
