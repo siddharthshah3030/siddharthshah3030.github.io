@@ -322,3 +322,20 @@ transition-duration: 1s;
 .next-slide:hover {
   transform: translateY(-50%) rotate(45deg) scale(1.1);
 }
+
+
+
+@media (max-width: 650px) {
+  #prev,#next {
+    left: 2%;
+    bottom: 2%;
+
+  }
+
+  .dot {
+    top: 50%;
+    right: 2%;
+
+  }
+
+}
