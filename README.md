@@ -11,7 +11,8 @@ a list of my frontend projects here with links!
 * [one page Site] - one page js scroll site with wall.js
 * [Team Members View] - many different views for team members
 * [Tech Kriti Clone] - a simple clone of teck kriti site
-**I'd really appreciate sugesstions**
+
+**I'd really appreciate sugesstions
 
 
 
