@@ -12,7 +12,7 @@ a list of my frontend projects here with links!
 * [Team Members View] - many different views for team members
 * [Tech Kriti Clone] - a simple clone of teck kriti site
 
-**I'd really appreciate sugesstions
+### I'd really appreciate sugesstions
 
 
 
