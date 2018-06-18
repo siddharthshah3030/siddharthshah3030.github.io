@@ -181,7 +181,9 @@ nav.navbar .navbar-nav li.active a:not(.btn) {
 nav.navbar-fixed-top {
 	z-index: 9499;
 	top: 0;
-	padding: 25px 0;
+padding-top: 25px;
+padding-left: 0;
+padding-right: 0;
 	opacity: 0;
 
 	background: white;
@@ -1036,6 +1038,9 @@ footer .social-footer li:hover a {
 	margin-top: 150px;
 }
 
+.margin-top {
+	margin-top: 100px;
+}
 @media(max-width:992px) {
 	h1 {
 		font-size: 36px;
