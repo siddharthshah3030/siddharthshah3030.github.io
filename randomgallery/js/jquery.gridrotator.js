@@ -101,7 +101,9 @@
 	$.GridRotator = function( options, element ) {
 
 		this.$el = $( element );
-		if( Modernizr.backgroundsize ) {
+		if( 2000 ) {
+//--------------------------------------------------------------------------
+		// if( Modernizr.backgroundsize ) {
 
 			var self = this;
 			this.$el.addClass( 'ri-grid-loading' );
@@ -176,13 +178,50 @@
 					'msTransition' : 'MSTransitionEnd',
 					'transition' : 'transitionend'
 				};
+// 				var sssii = JSON.stringify(Modernizr); // (Optional) beautiful indented output.
+// console.log(sssii);
+			// console.log(Modernizr)
+// 	Modernizr = 			{
+//     "touch": false,
+//     "backgroundsize": true,
+//     "csstransforms3d": true,
+//     "csstransitions": true,
+//     "_version": "2.6.2",
+//     "_prefixes": [
+//         "",
+//         "-webkit-",
+//         "-moz-",
+//         "-o-",
+//         "-ms-",
+//         ""
+//     ],
+//     "_domPrefixes": [
+//         "webkit",
+//         "moz",
+//         "o",
+//         "ms"
+//     ],
+//     "_cssomPrefixes": [
+//         "Webkit",
+//         "Moz",
+//         "O",
+//         "ms"
+//     ]
+// }
 
 			// support CSS transitions and 3d transforms
-			this.supportTransitions = Modernizr.csstransitions;
-			this.supportTransforms3D = Modernizr.csstransforms3d;
-
-			this.transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ] + '.gridrotator';
-
+			// this.supportTransitions = Modernizr.csstransitions;
+			// this.supportTransforms3D = Modernizr.csstransforms3d;
+			this.supportTransitions = true;
+			this.supportTransforms3D = true;
+			// var ssstr = JSON.stringify(Modernizr.prefixed, null, 4); // (Optional) beautiful indented output.
+// console.log(Modernizr.prefixed);
+			// console.log(ssstr);
+			var sss = (a,b,c) =>{
+				return b ? F(a,b,c) : (a,"pfx")
+			}
+			// this.transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ] + '.gridrotator';
+			this.transEndEventName = transEndEventNames[ sss( 'transition' ) ] + '.gridrotator';
 			// all animation types for the random option
 			this.animTypes = this.supportTransforms3D ? [
 				'fadeInOut',
@@ -358,8 +397,10 @@
 				document.addEventListener(evtname, function() { self._visChange(); } );
 
 			}
-
-			if( !Modernizr.touch && this.options.onhover ) {
+// console.log(Modernizr.touch);
+// touch function here
+//------------------------------------------------------------------------
+			if( !false && this.options.onhover ) {
 
 				self.$items.on( 'mouseenter.gridrotator', function() {
 
@@ -369,7 +410,7 @@
 						self._replace( $item );
 					}
 
-				} ).on( 'mouseleave.gridrotator', function() {
+				} 	).on( 'mouseleave.gridrotator', function() {
 
 					$( this ).data( 'hovered', false );
 

@@ -1,8 +1,3 @@
-#bs-example-navbar-collapse-1 ul li a {
-	margin: 0;
-	padding: 0;
-	font-weight: bold;
-}
 
 body {
 	font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -101,6 +96,11 @@ ul.white-list li {
 	font-size: 18px;
 	margin: 10px 0;
 	color: #fff;
+
+}
+#bs-example-navbar-collapse-1 ul li a {
+	margin: 0;
+	padding: 0;
 }
 
 ul.white-list li:before {
@@ -110,7 +110,7 @@ ul.white-list li:before {
 	display: inline-block;
 	width: 6px;
 	height: 6px;
-	margin-right: 15px;
+	margin-right:0px;
 	background: white;
 }
 
@@ -181,7 +181,9 @@ nav.navbar .navbar-nav li.active a:not(.btn) {
 nav.navbar-fixed-top {
 	z-index: 9499;
 	top: 0;
-	padding: 25px 0;
+padding-top: 25px;
+padding-left: 0;
+padding-right: 0;
 	opacity: 0;
 
 	background: white;
@@ -660,7 +662,7 @@ section {
 /* Footer */
 
 footer {
-	padding: 140px 0 40px;
+	padding: 0px 0 0px;
 	background: url('../img/footer.jpg');
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -706,7 +708,7 @@ footer .opening-hours {
 }
 
 footer .bottom-footer {
-	margin-top: 150px;
+	margin-top: 50px;
 }
 
 footer .social-footer {
@@ -1036,6 +1038,9 @@ footer .social-footer li:hover a {
 	margin-top: 150px;
 }
 
+.margin-top {
+	margin-top: 100px;
+}
 @media(max-width:992px) {
 	h1 {
 		font-size: 36px;
