@@ -108,7 +108,7 @@ var aww = function(){
  autotimer = setInterval(function(){
 	 	$('#sid').trigger('click')
 	}
- , 2000);
+ , 100000);
 }
 aww();
 // $('#autonext').on('click', function() {

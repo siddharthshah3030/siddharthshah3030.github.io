@@ -10,7 +10,7 @@
 }
 .carousel .slick-slide {
   text-align: center;
-  margin: 0 5px;
+  margin: 0 0px;
   display: inline-block;
 }
 .carousel .slick-slide .radio-inline {
@@ -178,18 +178,45 @@ transform: scale(1.4);
   .filter li.select-filter {
     display: none;
   }
+  .our-team{
+    margin: 10px;
+}
+
 }
 
 
+#teampad {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+
+
+#teampa {
+  padding-left: 2px;
+  padding-right: 2px;
+}
 
 
 .our-team{
     border: 2px solid #ff3232;
     border-radius: 10px;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     z-index: 1;
     position: relative;
+}
+@media screen and (min-width: 768px) {
+  .filter li {
+    display: inline-block;
+  }
+  .filter li.select-filter {
+    display: none;
+  }
+  .our-team{
+    margin: 10px;
+}
+
 }
 .our-team:before,
 .our-team:after{
