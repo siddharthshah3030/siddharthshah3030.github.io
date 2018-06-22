@@ -12,8 +12,8 @@ $(function() {
 			$('#responsive-carousel').slick({
 						dots: false,
 						arrows: true,
-						infinite: false,
-						speed: 600,
+						infinite: true,
+						speed: 800,
 						slidesToShow: 4,
 						slidesToScroll: 4,
 						//prevArrow: '.slick-prev',
@@ -72,6 +72,9 @@ $(function() {
 
 
 			});
+
+
+
 			$('.reset').on('click', function(event) {
 				event.preventDefault();
 				$('#responsive-carousel').slick('slickUnfilter');
@@ -80,3 +83,45 @@ $(function() {
 });
 // console.log(document.getElementsByClassName("slick-next"))
 // document.getElementsByClassName("slick-next").style.display= "none";
+// setInterval(function(){		$('#sid').trigger('click');
+//  }, 3000);
+
+
+ $('#responsive-carousel').on('mouseenter', function(event) {
+	 // event.preventDefault();
+	 clearInterval(autotimer);
+	 autotimer = null;
+});
+$('#responsive-carousel').on('mouseleave', function(event) {
+	// event.preventDefault();
+	// console.log("mouseleave");
+	aww();
+	 // autotimer = setInterval(function(){
+		// console.log("triggered")
+		//  	$('#sid').trigger('click')
+		// }
+	 // , 1001);
+	// clearInterval(autotimer);
+});
+
+var aww = function(){
+ autotimer = setInterval(function(){
+	 	$('#sid').trigger('click')
+	}
+ , 2000);
+}
+aww();
+// $('#autonext').on('click', function() {
+// console.log("js")
+//       alert($(this).text());
+//     });
+// 		$('#autonext').trigger('click');
+//
+//
+// 		// $('.slick-next').trigger('click');
+//
+// 		$("button").click(function(){
+//   // action goes here!!
+// 	console.log("js")
+// 	      alert($(this).text());
+// });

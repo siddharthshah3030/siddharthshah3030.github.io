@@ -78,19 +78,62 @@
 /* content: none; */
 
 }
+
+.slick-track {
+  margin-bottom: 200px;
+  outline: none;
+
+}
+
+#sponsors  div.slick-list.draggable{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .slick-prev,
 .slick-next {
+  text-shadow: 0px 0px 16px rgba(0, 0, 0, 0.8);
+
   /* content: none; */
   border: none;
   outline: none;
-  /* background: none; */
-  width:20%;;
+  background: none;
+  /* width:; */
   height: 32px;
+  font-size: 5em;
+  font-weight: bolder;
+  color: black;
   margin: 10px;
   /* margin-top: -20px; */
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   border-radius: 50%;
+  z-index: 99999;.
+    transition-duration: 0.3s;
+
+}
+
+.slick-prev {
+  position: absolute;
+  top: 68%;
+  left:-25px;
+  z-index: 99999;
+
+  transition-duration: 0.3s;
+
+}
+.slick-prev:hover {
+transform: scale(1.4);
+}
+.slick-next:hover {
+transform: scale(1.4);
+}
+.slick-next {
+  transition-duration: 0.3s;
+
+  position: absolute;
+  top: 68%;
+  right:-15px;
+
 }
 .slick-prev:before,
 .slick-next:before {
@@ -140,59 +183,71 @@
 
 
 
-
-
-
-
-
 .our-team{
-    overflow: hidden;
-    border-radius: 50%;
+    border: 2px solid #ff3232;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    z-index: 1;
     position: relative;
 }
+.our-team:before,
+.our-team:after{
+    content: "";
+    width: 100%;
+    height: 104%;
+    background: #ff3232;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transform: translateY(-50%) scaleX(0.3);
+    transition: all 0.3s ease 0s;
+}
+.our-team:after{
+    width: 106%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(0.25);
+}
+.our-team:hover:before{ transform: translateY(-50%) scaleX(0.7); }
+.our-team:hover:after{ transform: translate(-50%, -50%) scaleY(0.7); }
 .our-team img{
     width: 100%;
-
-    height: 100%;
-    position: relative;
-    right: 0;
-    transition: all 0.4s ease-in-out 0s;
-}
-.our-team:hover img{
-    right: 60%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
 }
 .our-team .team-content{
-    width: 80%;
-    height: 100%;
-    background: #f1f1f1;
-    padding: 20% 0 0 30px;
+    width: 93%;
+    padding: 25px 0 10px;
+    background: #ff4444;
     position: absolute;
-    top: 0;
-    right: -80%;
-    transition: all 0.4s ease-in-out 0s;
+    bottom: 50px;
+    left: 50%;
+    opacity: 0;
+    -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    transform: translateX(-50%);
+    transition: all 0.3s cubic-bezier(0.5, 0.2,0.1,0.9);
 }
 .our-team:hover .team-content{
-    right: 0;
-    line-height: 2px;
+    bottom: 10px;
+    opacity: 0.8;
 }
 .our-team .title{
-    font-size: 13px;
-    color: #8e0c80;
-    margin: 0 0 10px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0;
 }
 .our-team .post{
-  line-height: normal;
     display: block;
-    font-size: 12px;
-    font-weight: 600;
-    color: #333;
+    font-size: 1.1em;
+    color: #fff;
     text-transform: uppercase;
     margin-bottom: 10px;
-}
-.our-team .description{
-    font-size: 8px;
-    margin-right: 0;
-    color: #333;
 }
 .our-team .social{
     padding: 0;
@@ -201,34 +256,28 @@
 }
 .our-team .social li{
     display: inline-block;
-    margin-right: 10px;
-}
-.our-team .social li:last-child{
-    margin-right: 0;
+    margin: 0 5px;
 }
 .our-team .social li a{
     display: block;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-    font-size: 14px;
-    color: #999;
-    border-radius: 4px;
-    text-align: center;
-    transition: all 0.3s ease-in-out 0s;
+    width: 1em;
+    height: 1em;
+    line-height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 20px;
+    color: #ff3232;
+    transition: all 0.4s ease 0s;
 }
-.our-team .social li a:hover{ color: #fff; }
-.our-team .social li a.fa-facebook:hover{ background: #3b5a9b; }
-.our-team .social li a.fa-twitter:hover{ background: #2baae1; }
-.our-team .social li a.fa-google-plus:hover{ background: #f63d26; }
-.our-team .social li a.fa-youtube:hover{ background: #c3181e; }
+.our-team .social li a:hover{
+    background: linear-gradient(to bottom,#ff3232, darkred);
+    box-shadow: 0 0 0 5px rgba(255,255,255,0.3);
+    color: #fff;
+}
 @media only screen and (max-width: 990px){
-    .our-team{ margin-bottom: 50px; }
+    .our-team{ margin-bottom: 30px; }
 }
-@media only screen and (max-width: 360px){
-    .team-content{ padding: 15% 15px 0; }
-    .our-team .social li{ margin-right: 0; }
-}
+
 
 @media screen and (max-width: 768px) {
 
